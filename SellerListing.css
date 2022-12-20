@@ -69,6 +69,10 @@ input {
   border-style: none;
 }
 
+.input {
+  color: black;
+}
+
 #form {
   padding: 1em;
   margin: auto;

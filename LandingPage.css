@@ -3,6 +3,7 @@ body {
   padding: 2em;
   font-family: "Poppins", sans-serif;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -66,4 +67,27 @@ p {
   margin-bottom: 4rem;
   margin-top: 1rem;
   padding-top: 0px;
+}
+
+/* Add a responsive style for screens that are less than 600px wide */
+@media only screen and (max-width: 600px) {
+  /* Make the nav bar take up the full width of the screen */
+  #nav-bar {
+    width: 100%;
+  }
+  /* Hide the links and only show the "Connect Wallet" button on small screens */
+  #links {
+    display: none;
+  }
+  #connect-wallet {
+    display: block;
+  }
+  /* Make the main content take up the full width of the screen */
+  #main {
+    width: 100%;
+  }
+  /* Make the buttons stack vertically on small screens */
+  .button {
+    width: 100%;
+  }
 }
