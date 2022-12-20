@@ -3,51 +3,43 @@
   <head>
     <link rel="stylesheet" href="SellerListing.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Raleway:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Raleway:wght@200&display=swap");
-    </style>
+    <title>GearFi - List your NFT for sale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Raleway:wght@200&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="main">
-      <div id="nav-bar">
-        <h1>GearFi</h1>
-        <div id="links">
-          <ul>
-            <li><a href="">Marketplace</a></li>
-            <li><a href="">Sell</a></li>
-            <li><a href="">Docs</a></li>
-            <li>
-              <button id="connect-wallet" class="button" onclick="">
-                Connect Wallet
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <center><h1 id="heading">List your NFT for sale</h1></div></center>
-      <div id="form">
-        <form>
-          <label for="">Contract address</label><br />
-          <input type="text" class="input" name="" placeholder="0X00000000000" /><br />
-          <label for="">Token Id</label><br />
-          <input type="number" class="input" name="" placeholder="1234" />
-          <label for="">Asking Price</label><br />
-          <input type="number" class="input" name="" placeholder="1234" />
-          <label for="">Repayment Duration</label><br />
-          <input type="number" class="input" name="" placeholder="1234" />
-          <br>
-        <button class="button" id="list-btn">List</button>
-        </form>
-      </div>
+    <header class="header">
+      <h1>GearFi</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="">Marketplace</a></li>
+          <li><a href="">Sell</a></li>
+          <li><a href="">Docs</a></li>
+          <li>
+            <button id="connect-wallet" class="button" onclick="">
+              Connect Wallet
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 id="heading">List your NFT for sale</h1>
+      <div class="with-image">
+      <form id="form">
+        <label for="contract-address">Contract address</label>
+        <input type="text" id="contract-address" class="input" name="contract-address" placeholder="0X00000000000" />
+        <label for="token-id">Token Id</label>
+        <input type="number" id="token-id" class="input" name="token-id" placeholder="1234" />
+        <label for="price">Asking Price</label>
+        <input type="number" id="price" class="input" name="price" placeholder="1234" />
+        <label for="duration">Repayment Duration</label>
+        <input type="number" id="duration" class="input" name="duration" placeholder="1234" />
+      </form>
+      <img src="Card-img.png" alt="Card-Image">
     </div>
+    <button class="button" id="list-btn">List</button>
+        </main>
+    </main>
   </body>
 </html>
